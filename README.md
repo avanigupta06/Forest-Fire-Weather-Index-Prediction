@@ -47,12 +47,12 @@ The goal is to build a machine learning model that can accurately estimate FWI v
 
 ## 📊 Model Performance
 
-| Model              | MAE   | MSE   | RMSE  | R² Score |
-|--------------------|-------|-------|-------|----------|
-| Linear Regression  | 0.53  | 0.49  | 0.70  | 0.91     |
-| Ridge Regression   | 0.52  | 0.48  | 0.69  | 0.92     |
-| Lasso Regression   | 0.50  | 0.46  | 0.68  | 0.93 ✅ |
-| ElasticNet         | 0.55  | 0.51  | 0.71  | 0.90     |
+| Model              | MAE   | R² Score |
+|--------------------|-------|----------|
+| Linear Regression  | 1.13  | 0.949     |
+| Ridge Regression   | 0.56  | 0.984  ✅ |
+| Lasso Regression   | 0.61  | 0.982     |
+| ElasticNet         | 0.65  | 0.981     |
 
 *(values taken from your notebook results; may vary slightly on reruns)*
 
@@ -66,10 +66,49 @@ The goal is to build a machine learning model that can accurately estimate FWI v
 
 ---
 
+## ⚙️ How to Run the Project
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/forest-fire-fwi-prediction.git
+   cd forest-fire-fwi-prediction
+   ```
+
+2. **Create a virtual environment (recommended)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux/Mac
+   venv\Scripts\activate      # Windows
+   ```
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**
+
+   ```bash
+   application.ipynb
+   ```
+
+---
+
 ## 🔮 Future Improvements
 
 - Try advanced models like **Random Forest Regressor, XGBoost, or Gradient Boosting** for potentially better performance.
 - Perform **hyperparameter tuning** for Ridge, Lasso, and ElasticNet.
 - Use **cross-validation** to reduce overfitting and get more robust results.
+
+---
+
+## 🖼️ Screenshots
+
+### 🔹 Home Page
+![Home Page](screenshot/1.png)
+
+### 🔹 Prediction Result
+![Prediction Result](screenshot/2.png)
 
 ---
