@@ -16,6 +16,10 @@ The goal is to build a machine learning model that can accurately estimate FWI v
 - **Target variable**: `FWI` (Fire Weather Index)
 
 ---
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, Javascript (Bootstrap) 
+- **Backend:** Python (Flask)    
+---
 
 ## 🚀 Project Workflow
 
@@ -90,7 +94,7 @@ The goal is to build a machine learning model that can accurately estimate FWI v
 4. **Run the application**
 
    ```bash
-   application.ipynb
+   application.py
    ```
 
 ---
